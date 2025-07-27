@@ -41,31 +41,21 @@ npm install && npm run dev
 php artisan serve
 ```
 
-📌 To Do
- Tambahkan form contact yang terhubung ke email
+## 📌 To Do  
+Tambahkan form contact yang terhubung ke email  
 
- Tambah fitur dark mode toggle
+Tambah fitur dark mode toggle  
 
- Optimasi untuk SEO dan kecepatan
+Optimasi untuk SEO dan kecepatan  
 
-👨‍🎓 Tentang Saya
-Saya adalah mahasiswa Teknik Informatika yang tertarik dengan pengembangan web, UI/UX, dan teknologi open-source. Tujuan dari website ini adalah sebagai showcase untuk keperluan magang, freelance, maupun personal branding.
+## 👨‍🎓 Tentang Saya  
+Saya adalah mahasiswa Teknik Informatika yang tertarik dengan pengembangan web, UI/UX, dan teknologi open-source. Tujuan dari website ini adalah sebagai showcase untuk keperluan magang, freelance, maupun personal branding.  
 
-📫 Kontak
-Email: yourname@email.com
+## 📫 Kontak  
+Email: yourname@email.com  
 
-LinkedIn: linkedin.com/in/yourname
+LinkedIn: linkedin.com/in/yourname  
 
-Instagram: @yourusername
+Instagram: @yourusername  
 
-Dibuat dengan ❤️ oleh [bagus ardiansyah]
-
----
-
-Kalau lo kasih tahu:
-- Teknologi yang lo pakai lengkap (Laravel? Vite? Vue? Tailwind doang?)
-- Fitur spesifik (ada animasi? dark mode? ajax form?)
-- Link GitHub atau preview
-
-...gue bisa buatin versi yang **lebih personal dan solid**. Mau?
-
+Dibuat dengan ❤️ oleh [bagus ardiansyah]  
