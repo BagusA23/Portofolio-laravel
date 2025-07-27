@@ -39,6 +39,7 @@ npm install && npm run dev
 
 # 4. Jalankan server
 php artisan serve
+```
 
 📌 To Do
  Tambahkan form contact yang terhubung ke email
