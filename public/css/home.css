@@ -1,0 +1,25 @@
+    /* Custom animations */
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Smooth scroll behavior */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Background pattern animation */
+    @keyframes backgroundMove {
+        0% { transform: translateX(0) translateY(0); }
+        50% { transform: translateX(10px) translateY(-5px); }
+        100% { transform: translateX(0) translateY(0); }
+    }
+    
+    .bg-pattern {
+        animation: backgroundMove 20s ease-in-out infinite;
+    }
