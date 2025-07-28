@@ -9,12 +9,31 @@
     <section class="relative w-full min-h-screen overflow-hidden">
         <!-- SVG Background -->
         <div class="absolute inset-0 w-full h-full">
-            @if(file_exists(public_path('assets/svg/wave-haikei.svg')))
-                <div class="w-full h-full bg-cover bg-center bg-no-repeat" style="background-image: url('data:image/svg+xml;base64,{{ base64_encode(file_get_contents(public_path('assets/svg/wave-haikei.svg'))) }}');">
-                </div>
+            @if(file_exists(public_path('assets/svg/animated-landscape.svg')))
+                <!-- Untuk file SVG animasi, lebih baik inline atau object -->
+                <object data="{{ asset('assets/svg/animated-landscape.svg') }}" 
+                        type="image/svg+xml" 
+                        class="w-full h-full object-cover">
+                    <!-- Fallback jika SVG tidak load -->
+                    <div class="w-full h-full bg-gradient-to-br from-green-300 via-teal-300 to-green-400"></div>
+                </object>
             @else
-                <!-- Fallback gradient background -->
-                <div class="w-full h-full bg-gradient-to-br from-orange-300 via-pink-300 to-pink-400"></div>
+                <!-- Fallback: SVG inline langsung -->
+                <svg class="w-full h-full object-cover" 
+                    viewBox="0 0 900 600" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    preserveAspectRatio="xMidYMid slice">
+                    <rect x="0" y="0" width="900" height="600" fill="#92BFB1"></rect>
+                    <path fill="#1a6f54" stroke-linecap="square" stroke-linejoin="miter">
+                        <animate attributeName="d" 
+                                dur="4s" 
+                                repeatCount="indefinite"
+                                values="M0 502L90 502L90 399L180 399L180 435L270 435L270 490L360 490L360 455L450 455L450 417L540 417L540 494L630 494L630 443L720 443L720 498L810 498L810 416L900 416L900 418L900 601L900 601L810 601L810 601L720 601L720 601L630 601L630 601L540 601L540 601L450 601L450 601L360 601L360 601L270 601L270 601L180 601L180 601L90 601L90 601L0 601Z;
+                                        M0 508L90 495L90 410L180 385L180 448L270 425L270 485L360 475L360 440L450 435L450 405L540 430L540 485L630 460L630 425L720 510L720 485L810 505L810 395L900 425L900 428L900 601L900 601L810 601L810 601L720 601L720 601L630 601L630 601L540 601L540 601L450 601L450 601L360 601L360 601L270 601L270 601L180 601L180 601L90 601L90 601L0 601Z;
+                                        M0 495L90 515L90 385L180 415L180 420L270 445L270 505L360 465L360 475L450 425L450 435L540 405L540 515L630 435L630 465L720 485L720 515L810 485L810 435L900 405L900 408L900 601L900 601L810 601L810 601L720 601L720 601L630 601L630 601L540 601L540 601L450 601L450 601L360 601L360 601L270 601L270 601L180 601L180 601L90 601L90 601L0 601Z;
+                                        M0 502L90 502L90 399L180 399L180 435L270 435L270 490L360 490L360 455L450 455L450 417L540 417L540 494L630 494L630 443L720 443L720 498L810 498L810 416L900 416L900 418L900 601L900 601L810 601L810 601L720 601L720 601L630 601L630 601L540 601L540 601L450 601L450 601L360 601L360 601L270 601L270 601L180 601L180 601L90 601L90 601L0 601Z"/>
+                    </path>
+                </svg>
             @endif
             
             <!-- Overlay untuk readability -->
